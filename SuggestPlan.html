@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rubber Ducky</title>
+  <style>
+    body {
+      background-color: #f4b700;
+      margin: 0;
+    }
+
+    .bar {
+      background-color: #000;
+      height: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      padding-left: 3%;
+    }
+
+    .rubber-ducky {
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logo-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .white-square {
+        position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  height: 600px;
+      background-color: rgba(255, 255, 255, 0.33);
+      z-index: 1;
+    }
+
+    .Regenerate-image {
+      position: absolute;
+      top: 100px;
+      right: 40px;
+      width: 400px; 
+      height: 400px; 
+      background-image: url('regenerate.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+  </style>
+  <script>
+    function homePage() {
+        window.location.href = 'rubberFinal.html';
+    }
+    function regeneratePlan() {
+      window.location.href = 'rubberFinal.html';
+    }
+  </script>
+</head>
+<body>
+  <div class="bar">
+    <div class="rubber-ducky" onclick="homePage()">
+      <img src="rubberDuckyBlack.jpg" alt="Logo" class="logo-image">
+      Rubber Ducky
+    </div>
+    <div class="Regenerate-image" onclick="regeneratePlan()"></div>
+    <div class="white-square">  </div>
+</div>
+</body>
+</html>

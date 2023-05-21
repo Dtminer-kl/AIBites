@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rubber Ducky</title>
+  <style>
+    body {
+      background-color: #f4b700;
+      margin: 0;
+    }
+
+    .bar {
+      background-color: #000;
+      height: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      padding-left: 3%;
+    }
+
+    .rubber-ducky {
+      color: #fff;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .logo-image {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .white-square {
+      position: relative;
+      width: 1400px;
+      height: 600px;
+      background-color: rgba(255, 255, 255, 0.33);
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+
+
+    .budget-text {
+      position: absolute;
+      top: 50px;
+      left: 585px;
+      font-family: "Times New Roman", serif;
+      color: #fff;
+      font-size: 80px;
+      cursor: pointer;
+    }
+
+    #budget-options {
+  position: absolute;
+  top: 250px;
+  left: 585px;
+    }
+
+    select {
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+    }
+
+    #recommendation-button {
+        position: absolute;
+        top: 250px;
+        left: 778px;
+  height: 30px;
+  font-size: 16px;
+}
+
+
+  </style>
+  <script>
+    function homePage() {
+        window.location.href = 'rubberFinal.html';
+    }
+
+    function showOptions() {
+      var options = document.getElementById("budget-options");
+      options.style.display = "block";
+    }
+
+    function showOptions() {
+      var options = document.getElementById("budget-options");
+      options.style.display = "block";
+    }
+
+    function goToRecommendation() {
+    window.location.href = 'Recommendation.html';
+  }
+
+  </script>
+</head>
+<body>
+  <div class="bar">
+    <div class="rubber-ducky" onclick="homePage()">
+      <img src="rubberDuckyBlack.jpg" alt="Logo" class="logo-image">
+      Rubber Ducky
+    </div>
+  </div>
+
+  <div class="white-square">
+    <span class="budget-text">Budget</span>
+    <span class="budget-text" onclick="showOptions()">Budget</span>
+    <div id="budget-options">
+      <select>
+        <option value="20">RM20</option>
+        <option value="50">RM50</option>
+        <option value="100">RM100</option>
+      </select>
+    </div>
+    <button id="recommendation-button" onclick="goToRecommendation()">Go</button>
+    </div>
+
+</body>
+</html>
